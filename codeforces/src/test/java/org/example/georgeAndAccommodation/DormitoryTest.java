@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import java.util.List;
 
 class DormitoryTest {
-    Dormitory dormitory = new Dormitory();
+    private Dormitory dormitory = new Dormitory();
 
     @Test
     void shouldReturn0AvailableRoomsWhenThreeRoomsAreFull() {

@@ -4,7 +4,7 @@ class Room {
     private final int accommodatedPeople;
     private final int maxCapacity;
 
-    public Room(int howManyPeopleAccommodated, int maxCapacity) {
+    Room(int howManyPeopleAccommodated, int maxCapacity) {
         this.accommodatedPeople = howManyPeopleAccommodated;
         this.maxCapacity = maxCapacity;
     }
