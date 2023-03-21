@@ -9,10 +9,11 @@ class Room {
         this.maxCapacity = maxCapacity;
     }
 
-    int getAccommodatedPeople() {
+    public int getAccommodatedPeople() {
         return accommodatedPeople;
     }
-    int getMaxCapacity() {
+
+    public int getMaxCapacity() {
         return maxCapacity;
     }
 }

@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import java.util.List;
 
 class DormitoryTest {
-    private final Dormitory dormitory = new Dormitory();
+    private Dormitory dormitory = new Dormitory();
 
     @Test
     void shouldReturn0AvailableRoomsWhenThreeRoomsAreFull() {
@@ -33,4 +33,5 @@ class DormitoryTest {
         //then
         Assertions.assertEquals(2, availableRooms);
     }
+
 }
