@@ -13,7 +13,7 @@ class Room {
         return accommodatedPeople;
     }
 
-    public int getMaxCapacity() {
+    int getMaxCapacity() {
         return maxCapacity;
     }
 }
