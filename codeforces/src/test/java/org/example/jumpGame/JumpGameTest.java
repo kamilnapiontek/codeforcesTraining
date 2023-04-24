@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.stream.Stream;
 
 class JumpGameTest {
-    private JumpGame jumpGame = new JumpGame();
+    private final JumpGame jumpGame = new JumpGame();
 
     @ParameterizedTest
     @MethodSource("correctData")

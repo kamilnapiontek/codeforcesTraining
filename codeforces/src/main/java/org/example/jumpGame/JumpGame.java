@@ -15,7 +15,7 @@ public class JumpGame {
         int placeInArray;
         int difference = 0;
 
-        while (listToJump.get(currentIndex) + currentIndex < listToJump.size() - 1) {
+        while (impossibleFinalJump(listToJump, currentIndex)) {
             longestPossibleJump = 0;
             placeInArray = listToJump.get(currentIndex) - 1;
             for (int i = 1; i <= listToJump.get(currentIndex); i++) {
@@ -29,6 +29,10 @@ public class JumpGame {
             jumpsToReturn++;
         }
         return jumpsToReturn + 1;
+    }
+
+    private boolean impossibleFinalJump(List<Integer> listToJump, int currentIndex) {
+        return listToJump.get(currentIndex) + currentIndex < listToJump.size() - 1;
     }
 
     private boolean isJumpPossible(List<Integer> list) {
